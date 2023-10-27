@@ -1,0 +1,35 @@
+.catalog{
+  background: #eff0f2;
+  &__menu{
+
+  }
+  &__title{
+    font-size: 50px;
+    font-weight: 500;
+    padding: 100px 0;
+    color: #334059;
+  }
+  &__items{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  &__item{
+    border: 1px solid #0065dd;
+    border-radius: 5px;
+    padding: 60px;
+    align-content: center;
+    background: #fff;
+    &-logo{
+      padding-left: 40px;
+    }
+    &-title{
+      font-size: 26px;
+      font-weight: 500;
+    }
+    &-info{
+      color: #909ebb;
+      padding-left: 65px;
+    }
+  }
+}
