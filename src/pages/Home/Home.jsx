@@ -1,11 +1,16 @@
 import React from 'react';
-import style from './Home.module.css'
+import NewsBanner from "../../Companents/NewsBanner/NewsBanner";
+import Companies from '../../Companents/Companies/Companies'
+import MapBanner from "../../Companents/MapBanner/MapBanner";
+
 
 const Home = () => {
     return (
-        <section className={style.home}>
+        <section className="home">
             <div className="container">
-                home
+                <NewsBanner/>
+                <Companies/>
+                <MapBanner/>
             </div>
         </section>
     );
