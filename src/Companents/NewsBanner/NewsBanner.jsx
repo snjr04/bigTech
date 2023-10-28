@@ -6,7 +6,7 @@ import 'swiper/css/navigation';
 import {Link} from 'react-router-dom'
 
 
-import {Autoplay, Pagination, Navigation} from 'swiper/modules';
+import {Autoplay, Pagination} from 'swiper/modules';
 
 export default function NewsBanner() {
     return (

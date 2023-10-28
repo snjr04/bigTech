@@ -1,3 +1,23 @@
-.companies__menu{
-    padding: 100px 0;
+.companies{
+    margin: 50px 0;
+    &__items{
+        width: 100px;
+        height: 100px;
+    }
+    &__item{
+        width: calc(100% - 150px);
+    }
+    &__img{
+        width: 100px;
+        height: 100px;
+    }
+    &__image{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.mySwiper{
+    height: 500px;
+
 }

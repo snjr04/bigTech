@@ -1,0 +1,95 @@
+.header {
+  font-size: 25px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+
+  &__centeredText {
+    text-align: center; /* Выравнивание текста по центру */
+    font-size: 25px; /* Размер текста (по вашему выбору) */
+    font-weight: bold; /* Жирный текст */
+    color: black; /* Цвет текста (по вашему выбору) */
+  }
+
+  &__logo {
+    text-align: center;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__logo img {
+    max-width: 100px;
+  }
+
+  /* Стили для логотипа и ссылки на Telegram */
+  &__logo-telegram {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    color: black;
+  }
+
+  /* Стили для логотипа */
+  /* Дополнительные стили для ссылки на Telegram */
+  &__telegram a {
+    text-decoration: none;
+  }
+
+  &__telegram img {
+    width: 30px; /* Размер иконки Telegram по вашему выбору */
+    margin-left: 10px; /* Отступ между логотипом и ссылкой на Telegram */
+  }
+
+  /* Стили для третьего блока (Навигационная панель) */
+  &__navbar {
+    background-color: white;
+    padding: 15px 0;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__navbar div{
+    list-style: none;
+    padding: 0;
+  }
+
+  &__links {
+    display: inline;
+    margin: 0 40px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+
+  /* Добавление стиля при наведении на ссылки в навигационной панели */
+  &__links:hover {
+    color: #006efe;
+    transition: color 0.3s;
+  }
+
+
+  /* Медиа-запрос для мобильных устройств (ширина меньше 768px) */
+  @media (max-width: 768px) {
+
+    /* Стили для блока "Лого и Telegram" на мобильных устройствах */
+    .logo-telegram {
+      flex-direction: column; /* Столбцовое расположение */
+      text-align: center; /* Выравнивание по центру */
+    }
+
+    .telegram {
+      margin-top: 10px; /* Отступ сверху */
+    }
+
+    .telegram img {
+      margin-left: 0; /* Убрать отступ между логотипом и иконкой Telegram */
+    }
+    .navbar {
+      display: none;
+    }
+  }
+}

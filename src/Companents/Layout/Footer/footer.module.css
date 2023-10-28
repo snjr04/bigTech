@@ -1,0 +1,114 @@
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Разрешает перенос элементов на новую строку */
+  justify-content: center; /* Центрирует элементы по горизонтали */
+}
+
+.nav-list li {
+  margin-right: 30px;
+  margin-bottom: 10px; /* Добавляет вертикальный отступ между элементами */
+  white-space: nowrap; /*Предотвращает перенос текста на новую строку */
+  color: rgb(81, 220, 255); /* Изменяем цвет текста на голубой */
+}
+
+.nav-list a {
+  text-decoration: none;
+  font-weight: bold;
+  color:rgb(81, 220, 255);
+}
+
+.divider {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  margin: 20px 0;
+}
+
+.logo-section {
+  flex-basis: 30%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.resources-section {
+  flex-basis: 30%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.faq-section {
+  flex-basis: 20%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.logo-section h1,
+.resources-section h1,
+.faq-section h1,
+.telegram-section h1 {
+  font-size: 24px;
+  color: rgb(81, 220, 255);
+  margin-bottom: 10px;
+}
+
+
+
+.telegram-section {
+  flex-basis: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.telegram-section img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(81, 220, 255);
+  border-radius: 50%;
+}
+
+
+.back-to-top {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.back-to-top button {
+  background-color: rgb(81, 220, 255);
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-to-top button:hover {
+  background-color: rgb(21, 139, 169);
+}
+
+.nav-list li:hover a {
+  color: rgb(21, 130, 157); /* Изменение цвета при наведении на голубой */
+  transform: scale(1.1);
+  transition: color 0.3s, transform 0.3s;
+}

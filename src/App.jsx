@@ -5,6 +5,7 @@ import News from './pages/news/news'
 import './styles/Style.scss'
 import Catalog from "./pages/Catalog/Catalog";
 import Info from "./pages/Info/Info";
+import Companies from "./Companents/Companies/Companies";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
                     <Route element={<News/>} path='/news'/>
                     <Route element={<Catalog/>} path='/catalog'/>
                     <Route element={<Info/>} path='/catalog/info'/>
+                    <Route element={<Companies/>} path="/comp"/>
                 </Route>
             </Routes>
         </BrowserRouter>
