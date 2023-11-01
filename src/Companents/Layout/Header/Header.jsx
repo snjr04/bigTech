@@ -22,7 +22,7 @@ const Header = () => {
                 <nav>
                     <div className="header__navbar">
                         <Link className="header__links" to="#">Закупки</Link>
-                        <Link className="header__links" to="#">Контракты</Link>
+                        <Link className="header__links" to="/Contracts">Контракты</Link>
                         <Link className="header__links" to="/catalog">Каталог</Link>
                         <Link className="header__links" to="#">Планирование</Link>
                         <Link className="header__links" to="#">Объявление</Link>

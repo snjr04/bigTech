@@ -6,6 +6,10 @@ import './styles/Style.scss'
 import Catalog from "./pages/Catalog/Catalog";
 import Info from "./pages/Info/Info";
 import Companies from "./Companents/Companies/Companies";
+import Contracts from './pages/Contract/Contract';
+import ContractsCard from './pages/ContractCards/ContractCard';
+
+
 
 
 function App() {
@@ -18,6 +22,8 @@ function App() {
                     <Route element={<Catalog/>} path='/catalog'/>
                     <Route element={<Info/>} path='/catalog/info'/>
                     <Route element={<Companies/>} path="/comp"/>
+                    <Route element={<Contracts/>} path="/Contracts"/>
+                    <Route element={<ContractsCard />} path="/Contracts/contractsCard" />
                 </Route>
             </Routes>
         </BrowserRouter>

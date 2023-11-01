@@ -24,7 +24,7 @@ const Companies = () => {
                         navigation={{
                             clickable: true,
                         }}
-                        navigation={true}
+                        navigation1={true}
                         modules={[Autoplay,Navigation]}
                         className="mySwiper"
                     >
