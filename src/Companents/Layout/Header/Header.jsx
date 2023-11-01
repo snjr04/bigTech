@@ -2,7 +2,6 @@ import React from 'react';
 import s from './Header.module.css';
 
 const Header = () => {
-<<<<<<< HEAD
   return (
     <header className={s.header}>
       {/* First Block: Search and Region Selection */}
@@ -42,22 +41,22 @@ const Header = () => {
       <nav>
         <ul className={s['navbar']}>
           <li><a href="#">Закупки</a></li>
-          <li><a href="#">Контракты</a></li>
-          <li><a href="#">Каталог</a></li>
+          <li><a href="/Contract">Контракты</a></li>
+          <li><a href="/Catalog">Каталог</a></li>
           <li><a href="#">Планирование</a></li>
           <li><a href="#">Объявление</a></li>
           <li><a href="#">Аналитические данные</a></li>
-          <li><a href="#">Планы</a></li>
+          <li><a href="/news">News</a></li>
         </ul>
         <div className={s['menu-select']}>
           <select>
-            <option value="Бишкек">Закупки</option>
-            <option value="Ош">Контракты</option>
-            <option value="Баткен">Каталог</option>
-            <option value="Ыссык Куль">Планирование</option>
-            <option value="Нарын">Объявление</option>
-            <option value="Талас">Аналитические данные</option>
-            <option value="Жалал-Абад">Планы</option>
+            <option><a>Закупки</a></option>
+            <option ><a href="/Contract" >Контракты</a></option>
+            <option><a href="/Catalog">Каталог</a></option>
+            <option ><a>Планирование</a></option>
+            <option ><a>Объявление</a></option>
+            <option ><a>Аналитические данные</a></option>
+            <option href="/news" ><a href="/news">News</a></option>
           </select>
         </div>
       </nav>
@@ -66,39 +65,3 @@ const Header = () => {
 };
 ``
 export default Header;
-
-=======
-    return (
-        <header className="header">
-            <div className="container">
-                <div className="header__logo-telegram">
-                    <div className="header__logo">
-                        <img src="1.jpg" alt="Логотип"/>
-                    </div>
-                    <div className="header__centeredText">
-                        Официальный Портал Государственных Закупок Кыргызской Республики
-                    </div>
-                    <div className="header__telegram">
-                        <a href="https://web.telegram.org/a/" target="_blank" rel="noopener noreferrer">
-                            <img src="tg.svg" alt="Telegram"/>
-                        </a>
-                    </div>
-                </div>
-                <hr/>
-                <nav>
-                    <div className="header__navbar">
-                        <Link className="header__links" to="#">Закупки</Link>
-                        <Link className="header__links" to="/Contracts">Контракты</Link>
-                        <Link className="header__links" to="/catalog">Каталог</Link>
-                        <Link className="header__links" to="#">Планирование</Link>
-                        <Link className="header__links" to="#">Объявление</Link>
-                        <Link className="header__links" to="#">Аналитические данные</Link>
-                        <Link className="header__links" to="#">Планы</Link>
-                    </div>
-                </nav>
-            </div>
-        </header>
-    );
-};
->>>>>>> 065e96f2f3c7cd3307baebe707c9a0ca2968d87d
-
