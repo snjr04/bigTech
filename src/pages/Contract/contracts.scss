@@ -1,0 +1,56 @@
+.contracts {
+    /* Общие стили для секции contracts */
+}
+
+.contract-container {
+    display: flex; /* Используем flexbox для разделения на две части */
+    border: 1px solid rgba(128, 128, 128, 0.521);
+    padding: 10px;
+    margin: 20px;
+    transition: all 0.3s; /* Добавляем плавный переход при hover */
+
+    &:hover {
+        border: 1px solid #0074d9; /* Изменяем цвет границы при hover */
+        padding: 15px; /* Увеличиваем внутренний отступ при hover */
+        transform: scale(1.02); /* Увеличиваем размер блока при hover */
+    }
+
+    .left-section {
+        flex: 90%; /* Левая сторона занимает 70% */
+       
+    }
+
+    .right-section {
+        flex: 30%;/* Правая сторона занимает 30% */
+    }
+
+    h4 a,
+    .contract-maindetails a {
+        color:#0074d9;
+        text-decoration: none;
+        padding-top: 10px;
+        transition: font-weight 0.5s;
+    }
+
+    h3 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: rgba(70, 70, 70, 0.596);
+    }
+
+    &:hover h4 a,
+    &:hover .contract-maindetails a {
+        color: rgba(2, 95, 235, 0.973);
+        font-weight:700;
+    }
+
+}
+.contract-price {
+    font-size: 20px;
+    color: #0074d9 ;
+    font-weight: bold;
+}
+p {
+    text-decoration: none;
+    color: rgb(78, 78, 78);
+}
