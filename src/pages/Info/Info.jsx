@@ -1,11 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Info = () => {
+function Example() {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
         <div>
-            <h1>info</h1>
+            <button onClick={() => setIsOpen(true)}>
+                Open Pop-up
+            </button>
+
+            {isOpen && (
+                <div>
+                    <div>
+                        This is the content of the pop-up.
+                    </div>
+                    <button onClick={() => setIsOpen(false)}>
+                        Close Pop-up
+                    </button>
+                </div>
+            )}
         </div>
     );
-};
+}
 
-export default Info;
+export default Example;

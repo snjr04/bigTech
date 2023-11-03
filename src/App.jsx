@@ -8,6 +8,7 @@ import Info from "./pages/Info/Info";
 import Companies from "./Companents/Companies/Companies";
 import Contracts from './pages/Contract/Contract';
 import ContractsCard from './pages/ContractCards/ContractCard';
+import NotFound from "./pages/NotFound";
 
 
 
@@ -25,6 +26,7 @@ function App() {
                     <Route element={<Contracts/>} path="/Contracts"/>
                     <Route element={<ContractsCard />} path="/Contracts/contractsCard" />
                 </Route>
+                <Route element={<NotFound/>} path="*"/>
             </Routes>
         </BrowserRouter>
     )
