@@ -1,12 +1,12 @@
-.contracts {
-    /* Общие стили для секции contracts */
-}
+
 
 .contract-container {
+    max-width: 1200px;
     display: flex; /* Используем flexbox для разделения на две части */
     border: 1px solid rgba(128, 128, 128, 0.521);
     padding: 10px;
-    margin: 20px;
+    margin: 20px auto;
+    
     transition: all 0.3s; /* Добавляем плавный переход при hover */
 
     &:hover {
@@ -50,7 +50,7 @@
     color: #0074d9 ;
     font-weight: bold;
 }
-p {
+p  {
     text-decoration: none;
     color: rgb(78, 78, 78);
 }

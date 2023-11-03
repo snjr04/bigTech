@@ -14,12 +14,15 @@
   padding: 0 20px;
 }
 
+
+
 .nav-list {
   list-style: none;
   padding: 0;
   display: flex;
   flex-wrap: wrap; /* Разрешает перенос элементов на новую строку */
   justify-content: center; /* Центрирует элементы по горизонтали */
+  color: #333;
 }
 
 .nav-list li {
@@ -95,7 +98,7 @@
 
 .back-to-top button {
   background-color: #0074d9;
-  color: black;
+  color: #333;
   font-weight: bold;
   padding: 10px 20px;
   border: none;

@@ -128,12 +128,12 @@
 
   /* Стили для третьего блока (Навигационная панель) */
   nav {
-    background-color: white;
     padding: 15px 0;
     font-size: 20px;
   }
   
   .navbar ul {
+    background-color: white;
     list-style: none;
     padding: 0;
   }

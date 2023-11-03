@@ -41,7 +41,7 @@ const Header = () => {
       <nav>
         <ul className={s['navbar']}>
           <li><a href="#">Закупки</a></li>
-          <li><a href="/Contract">Контракты</a></li>
+          <li><a href="/Contracts">Контракты</a></li>
           <li><a href="/Catalog">Каталог</a></li>
           <li><a href="#">Планирование</a></li>
           <li><a href="#">Объявление</a></li>
