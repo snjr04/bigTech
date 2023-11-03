@@ -4,7 +4,6 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Navigation} from 'swiper/modules';
-import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import {AiOutlineClose} from 'react-icons/ai'
 
 
@@ -230,7 +229,8 @@ l31 -17 19 31 c17 28 18 34 5 48 -8 9 -15 23 -15 31 0 22 104 63 138 54 22 -5
 35 -15 39 -39 9 -14 -18 -21 -20 -38 -10 -12 6 -24 19 -27 29 -3 9 -28 25 -55
 35 -59 21 -56 21 -71 2z"/>
                                         </g>
-                                    </svg>                                    {isOpen && (
+                                    </svg>
+                                    {isOpen && (
                                         <div className="popup">
                                             <div className="popup__menu">
                                                 <h2 className="popup__title">область</h2>
@@ -264,17 +264,7 @@ l31 -17 19 31 c17 28 18 34 5 48 -8 9 -15 23 -15 31 0 22 104 63 138 54 22 -5
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="container">
-                                <Map google={this.props.google} zoom={14}>
 
-                                    <Marker onClick={this.onMarkerClick}
-                                            name={'Current location'} />
-
-                                    <InfoWindow onClose={this.onInfoWindowClose}>
-                                        <div>
-                                            <h1>{this.state.selectedPlace.name}</h1>
-                                        </div>
-                                    </InfoWindow>
-                                </Map>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>Slide 3</SwiperSlide>

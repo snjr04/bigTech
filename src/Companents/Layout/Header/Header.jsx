@@ -4,7 +4,6 @@ import s from './Header.module.css';
 const Header = () => {
     return (
         <header className={s.header}>
-            {/* First Block: Search and Region Selection */}
             <div className="container">
                 <div className={s['search-region']}>
                     <div className={s.search}>
@@ -38,38 +37,11 @@ const Header = () => {
                     </div>
                 </div>
 
-<<<<<<< HEAD
-      {/* Third Block: Navigation Panel */}
-      <nav>
-        <ul className={s['navbar']}>
-          <li><a href="#">Закупки</a></li>
-          <li><a href="/Contracts">Контракты</a></li>
-          <li><a href="/Catalog">Каталог</a></li>
-          <li><a href="#">Планирование</a></li>
-          <li><a href="#">Объявление</a></li>
-          <li><a href="#">Аналитические данные</a></li>
-          <li><a href="/news">News</a></li>
-        </ul>
-        <div className={s['menu-select']}>
-          <select>
-            <option><a>Закупки</a></option>
-            <option ><a href="/Contract" >Контракты</a></option>
-            <option><a href="/Catalog">Каталог</a></option>
-            <option ><a>Планирование</a></option>
-            <option ><a>Объявление</a></option>
-            <option ><a>Аналитические данные</a></option>
-            <option href="/news" ><a href="/news">News</a></option>
-          </select>
-        </div>
-      </nav>
-    </header>
-  );
-=======
-                {/* Third Block: Navigation Panel */}
+
                 <nav>
                     <ul className={s['navbar']}>
                         <li><a href="#">Закупки</a></li>
-                        <li><a href="/Contract">Контракты</a></li>
+                        <li><a href="/Contracts">Контракты</a></li>
                         <li><a href="/Catalog">Каталог</a></li>
                         <li><a href="#">Планирование</a></li>
                         <li><a href="#">Объявление</a></li>
@@ -91,7 +63,6 @@ const Header = () => {
             </div>
         </header>
     );
->>>>>>> 0f6d17f19ed093a8460c6e67804bbb3aa7437760
 };
-``
+
 export default Header;
