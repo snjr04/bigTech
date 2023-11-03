@@ -111,7 +111,17 @@
         width: 50px;
         position: fixed;
         z-index: 99;
-        top: 43rem;
+        top: 45rem;
         right: 2rem;
+      fill: #0065dd;
     }
+}
+
+#map-of-kr{
+  cursor: pointer;
+}
+
+#chui:hover, #isyk-kul:hover, #talas:hover, #naryn:hover, #jalal-abad:hover, #osh:hover, #batken:hover{
+  fill: rgb(49, 22, 219);
+
 }

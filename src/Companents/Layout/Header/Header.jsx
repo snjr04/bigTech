@@ -40,13 +40,13 @@ const Header = () => {
 
                 <nav>
                     <ul className={s['navbar']}>
-                        <li><a href="#">Закупки</a></li>
-                        <li><a href="/Contracts">Контракты</a></li>
+                        <li><a href="#">Тендер</a></li>
+                        <li><a href="/Contracts">Закупки</a></li>
                         <li><a href="/Catalog">Каталог</a></li>
-                        <li><a href="#">Планирование</a></li>
-                        <li><a href="#">Объявление</a></li>
-                        <li><a href="#">Аналитические данные</a></li>
-                        <li><a href="/news">News</a></li>
+                        <li><a href="#">Планы</a></li>
+                        <li><a href="#">Документы</a></li>
+                        <li><a href="#">Часто задаваемые вопросы</a></li>
+                        <li><a href="/news">Новости</a></li>
                     </ul>
                     <div className={s['menu-select']}>
                         <select>
@@ -64,5 +64,4 @@ const Header = () => {
         </header>
     );
 };
-
 export default Header;
