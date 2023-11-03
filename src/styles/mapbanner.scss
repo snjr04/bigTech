@@ -1,3 +1,117 @@
-.map__menu{
-    padding: 300px 0;
+.map {
+  position: relative;
+
+  &__items {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__list {
+    margin-top: 160px;
+  }
+
+  &__menu {
+    &-title {
+      color: #334059;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    &-text {
+      padding-top: 20px;
+      color: #6F7C98;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  &__info {
+    padding: 30px 0;
+
+    &-info {
+      padding-bottom: 10px;
+      color: #334059;
+      font-size: 22px;
+      font-weight: 400;
+
+      &:first-child::before {
+        content: "";
+        background: #EEF1F6;
+        padding: 1px 12px;
+        margin-right: 10px;
+        border-radius: 4px;
+      }
+
+      &:nth-child(2)::before {
+        content: "";
+        background: #BCC5D9;
+        padding: 1px 12px;
+        margin-right: 10px;
+        border-radius: 4px;
+      }
+
+      &:nth-child(3)::before {
+        content: "";
+        background: #9AA9C6;
+        padding: 1px 12px;
+        margin-right: 10px;
+        border-radius: 4px;
+      }
+
+      &:nth-child(4)::before {
+        content: "";
+        background: #798CB3;
+        padding: 1px 12px;
+        margin-right: 10px;
+        border-radius: 4px;
+      }
+
+      &:last-child::before {
+        content: "";
+        background: #576FA0;
+        padding: 1px 12px;
+        margin-right: 10px;
+        border-radius: 4px;
+      }
+
+    }
+  }
+
+  &__line {
+    border-right: 1px solid #e4e7f2;
+    margin: 160px 0 100px;
+  }
+
+}
+
+
+.popup {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(51, 64, 89, .2);
+  border-radius: 5px;
+  padding: 40px;
+
+  &__close {
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+}
+
+.telegram{
+    position: relative;
+    &-img{
+        height: 50px;
+        width: 50px;
+        position: fixed;
+        z-index: 99;
+        top: 43rem;
+        right: 2rem;
+    }
 }

@@ -38,7 +38,7 @@ const Companies = () => {
                         <SwiperSlide>
                             <div className="companies__items">
                                 <div className="companies__item">
-                                    <img className="companies__image" src="./public/a-bank.svg" alt="companya"/>
+                                    <img className="companies__img" src="./public/a-bank.svg" alt="companya"/>
                                 </div>
                             </div>
                         </SwiperSlide>
@@ -107,7 +107,7 @@ const Companies = () => {
                         </SwiperSlide>
 
                     </Swiper>
-                    <img src="a-bank.svg" alt=""/>
+
                 </div>
             </div>
         </section>
