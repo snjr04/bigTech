@@ -1,21 +1,14 @@
 import React, {useState} from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
+import {Link} from 'react-router-dom'
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import {Pagination, Navigation} from 'swiper/modules';
 import {AiOutlineClose} from 'react-icons/ai'
-import GoogleMapReact from 'google-map-react';
 
 const MapBanner = () => {
 
-    const defaultProps = {
-        center: {
-            lat: 10.99835602,
-            lng: 77.01502627
-        },
-        zoom: 11
-    };
     const [isOpen, setIsOpen] = useState(false);
 
     const [currentArea, setCurrentArea] = useState('');
@@ -71,7 +64,7 @@ const MapBanner = () => {
                                             </div>
                                         </div>
                                     </aside>
-                                    <div className="map__line"></div>
+                                    <div className="popup__line-y"></div>
                                     <div className="map__item">
                                         <svg id="map-of-kr" fill="#576FA0" version="1.0"
                                              xmlns="http://www.w3.org/2000/svg"
@@ -258,14 +251,14 @@ l31 -17 19 31 c17 28 18 34 5 48 -8 9 -15 23 -15 31 0 22 104 63 138 54 22 -5
                                         {isOpen && (
                                             <div className="popup">
                                                 <div className="popup__menu">
-                                                    <h2 className="popup__title">область</h2>
+                                                    <h2 className="popup__title">Бишкекскя область</h2>
                                                     <div className="popup__items">
                                                         <div className="popup__item">
                                                             <p className="popup__price">6,15%</p>
                                                             <p className="popup__text">Относительная экономия
                                                                 при <br/> заключении контрактов</p>
                                                         </div>
-                                                        <div className="map__line"></div>
+                                                        <div className="popup__liney"></div>
                                                         <div className="popup__item">
                                                             <p className="popup__price">2,39 млрд C</p>
                                                             <p className="popup__text">Экономия при
@@ -276,15 +269,41 @@ l31 -17 19 31 c17 28 18 34 5 48 -8 9 -15 23 -15 31 0 22 104 63 138 54 22 -5
                                                     <h3 className="popup__subtitle">Региональные заказчики: 1,42 млрд C
                                                         (5,25%)</h3>
                                                     <p className="popup__subtext">из них органы государственной власти,
-                                                        казённые учреждения и иные ПБС: <span className="popup__info">0,68 млрд C (4,03%)Муниципальные заказчики: 0,96 млрд ₽ (8,27%)</span>
+                                                        казённые учреждения и иные ПБС: <span className="popup__info">2,08 млрд C (6,3%)</span>
                                                     </p>
                                                     <h3 className="popup__subtitle">Муниципальные заказчики: 0,96 млрд ₽
                                                         (8,27%)</h3>
                                                     <p className="popup__subtext">из них органы местного самоуправления,
-                                                        в том числе их территориальные
+                                                        в том числе их территориальные <br/>
                                                         органы, муниципальные казённые учреждения и иные ПБС: <span
                                                             className="popup__info">0,64 млрд C (6,82%)</span></p>
                                                     <div className="popup__line"></div>
+                                                        <div className="popup__list">
+                                                            <div className="popup__list-menu">
+                                                                <p className="popup__list-title">Планы-графики</p>
+                                                                <p className="popup__list-num">3 846</p>
+                                                                <p className="popup__list-price">275,18 млрд ₽</p>
+                                                            </div>
+                                                            <div className="popup__liney"></div>
+                                                            <div className="popup__list-menu">
+                                                                <p className="popup__list-title">Извещения</p>
+                                                                <p className="popup__list-num">47 745</p>
+                                                                <p className="popup__list-price">126,99 млрд ₽</p>
+                                                            </div>
+                                                            <div className="popup__liney"></div>
+                                                            <div className="popup__list-menu">
+                                                                <p className="popup__list-title">Контракты</p>
+                                                                <p className="popup__list-num">62 645</p>
+                                                                <p className="popup__list-price">131 млрд ₽</p>
+                                                            </div>
+                                                        </div>
+                                                    <div className="popup__line"></div>
+                                                    <div className="popup__list">
+                                                        <p className="popup__list-title">Самое крупное извещение <Link className="popup__list-title-blue" to="/Contracts/contractsCard">№0119200000123003816 </Link> на сумму<span className="popup__list-num">1 676 151 158,86 ₽</span> <br/>
+                                                            Самый крупный контракт <Link to="/Contracts/contractsCard" className="popup__list-title-blue"> №2246621522023000039 </Link> на сумму <span className="popup__list-num">15 469 558 132,71 ₽</span> <br/>
+                                                            Заключено <span className="popup__list-num"> СМП 43346 </span> договоров на сумму <span className="popup__list-num">64 386 857 628,37 ₽</span>
+                                                        </p>
+                                                    </div>
                                                 </div>
                                                 <div className="popup__close" onClick={handleClose}>
                                                     <AiOutlineClose size="25"/>
@@ -297,11 +316,7 @@ l31 -17 19 31 c17 28 18 34 5 48 -8 9 -15 23 -15 31 0 22 104 63 138 54 22 -5
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="container">
-                                <GoogleMapReact
-                                    defaultCenter={defaultProps.center}
-                                    defaultZoom={defaultProps.zoom}
-                                >
-                                </GoogleMapReact>
+
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>Slide 3</SwiperSlide>

@@ -91,13 +91,108 @@
 
 .popup {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 90px;
+  right: 100px;
   z-index: 10;
   background: #fff;
   box-shadow: 0 4px 12px rgba(51, 64, 89, .2);
   border-radius: 5px;
-  padding: 40px;
+  padding: 30px;
+  &__title{
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 12px;
+  }
+  &__price{
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 0 10px ;
+    margin: 0;
+  }
+  &__text{
+    font-weight: 300;
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  &__items{
+    display: flex;
+  }
+  &__item{
+    padding-right: 30px;
+    &:last-child{
+      padding-left: 40px;
+    }
+  }
+  &__line {
+    border-top: 1px solid #e4e7f2;
+  }
+    &__liney{
+      border-right: 1px solid #e4e7f2;
+      margin: 15px 0;
+  }
+  &__subtitle{
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &__subtext{
+    font-weight: 300;
+    font-size: 10px ;
+    padding-top: 5px;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-evenly;
+    &-menu{
+      padding: 20px 0;
+    }
+  &-title{
+    font-size: 12px;
+    font-weight: 300;
+    margin: 0;
+    &-blue{
+      color: rgb(49, 22, 219);
+      position: relative;
+      text-decoration: none;
+      transition: 0.5s;
+      &::after {
+        position: absolute;
+        content: "";
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: rgb(49, 22, 219);
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s;
+      }
+
+      &:hover {
+        color: rgb(49, 22, 219);
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
+  }
+    &-num{
+      font-weight: 300;
+      font-size: 14px;
+      padding: 2px 0;
+      margin: 0;
+    }
+    &-price{
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  &__list{
+    padding: 12px 0;
+    margin: 0;
+  }
 
   &__close {
     cursor: pointer;
@@ -105,6 +200,7 @@
     top: 25px;
     right: 25px;
   }
+
 }
 
 
