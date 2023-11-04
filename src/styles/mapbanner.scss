@@ -212,3 +212,17 @@
   fill: rgb(49, 22, 219);
 
 }
+
+.message{
+  position: relative;
+  &__link{
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    background: #576FA0;
+    padding: 9px 7px 0 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999;
+  }
+}

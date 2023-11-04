@@ -12,6 +12,7 @@ import NotFound from "./pages/NotFound";
 import Plans from "./pages/Plans/Plans"
 import DetailedPlan from './pages/DetailedPlan/DetailedPlan';
 import Questions from './pages/Questions/Questions.jsx'
+import Documents from './pages/Documents/documents.jsx'
 import Messenger from "./pages/Messenger/Messenger";
 
 
@@ -32,6 +33,7 @@ function App() {
                     <Route element={<Plans/>} path="/Plans"/>
                     <Route element={<DetailedPlan/>} path="/DetailedPlan"/>
                     <Route element={<Questions/>} path="/Questions"/>
+                    <Route element={<Documents/>} path="/Documents"/>
                 </Route>
                 <Route element={<NotFound/>} path="*"/>
                 <Route element={<Messenger/>} path="/message"/>

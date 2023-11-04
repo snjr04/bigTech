@@ -1,0 +1,24 @@
+.documents{
+    max-width: 1200px;
+    margin: 20px auto;
+    &__top{
+    background-color: rgb(70, 160, 202);
+    padding: 25px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 15px 15px 0 0;
+    }
+
+    &-maindetails{
+           
+            span {
+                text-align: center; /* Center the text horizontally */
+  margin: 0 auto; /* Center the element within its container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+            }
+        
+          
+    }
+}
