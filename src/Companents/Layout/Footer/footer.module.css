@@ -1,7 +1,8 @@
 .footer {
-  background-color: #333;
+  background-color: rgb(70, 160, 202);
   color: #fff;
-  padding: 40px 0;
+  padding: 25px 0;
+  
 }
 
 .container {
@@ -11,37 +12,14 @@
   align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px 20px;
+
+
 }
 
 
-
-.nav-list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap; /* Разрешает перенос элементов на новую строку */
-  justify-content: center; /* Центрирует элементы по горизонтали */
-  color: #333;
-}
-
-.nav-list li {
-  margin-right: 30px;
-  margin-bottom: 10px; /* Добавляет вертикальный отступ между элементами */
-  white-space: nowrap; /*Предотвращает перенос текста на новую строку */
-  color: #0074d9; /* Изменяем цвет текста на голубой */
-}
-
-.nav-list a {
-  text-decoration: none;
-  font-weight: bold;
-  color:#0074d9;
-}
-
-.divider {
-  width: 100%;
-  border-top: 1px solid rgba(255, 255, 255, 0.4);
-  margin: 20px 0;
+p {
+  color: #fff;
 }
 
 .logo-section {
@@ -57,49 +35,34 @@
 }
 
 .contact-section {
-  flex-basis: 10%;
+  flex-basis: 30%;
   text-align: left;
   margin-bottom: 20px;
 
 }
 
 .social-section {
-  flex-basis: 10%;
+  flex-basis: 30%;
   text-align: left;
   margin-bottom: 20px;
-  margin-top: 60px;
+  margin-top: 18px;
+}
 
+a.text{
+  display: inline-block;
 }
 
 .logo-section h1,
 .resources-section h1,
-.faq-section h1,
-.telegram-section h1 {
-  font-size: 24px;
-  color: #0074d9;
+.contact-section h1,
+.social-section h1 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
 
-
-.telegram-section {
-  flex-basis: 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-top: 20px;
-
-  
-}
-
-
-.telegram-section img {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-
-}
 
 
 .back-to-top {
@@ -107,31 +70,29 @@
   margin-top: 20px;
 }
 
-.back-to-top button {
-  background-color: #0074d9;
-  color: #333;
-  font-weight: bold;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
+
+
+
+.text {
+  font-size: 18px; /* Размер шрифта */
+  color: #00d974;; /* Цвет текста (белый) */
+  margin-left: 10px; /* Отступ слева от текста для выравнивания */
+  margin-bottom: 10px;
+  transition: all 0.3s;
 }
 
-.back-to-top button:hover {
-  background-color: #0056b3;
-}
-
-.nav-list li:hover a {
-  color: #0056b3; /* Изменение цвета при наведении на голубой */
-  transform: scale(1.1);
-  transition: color 0.3s, transform 0.3s;
-}
-
-p {
-  margin-top: 10px;
+.text:hover{
+  text-decoration: underline;
 }
 
 
+a.text {
+  font-size: 14px; /* Размер шрифта */
+  color: #fff; /* Цвет текста (белый) */
+  margin-left: 10px; /* Отступ слева от текста для выравнивания */
+  display: inline-block; /* Добавляет блочный элемент для корректного размещения текста */
+}
 
-
-
+.light {
+  color: white;
+}

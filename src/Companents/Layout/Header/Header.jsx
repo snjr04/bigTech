@@ -3,11 +3,15 @@ import s from './Header.module.scss';
 
 const Header = () => {
     return (
-        <header className={s.header}>
+        <header className={s.header}> <div className={s['search-region']}>
             <div className="container">
-                <div className={s['search-region']}>
+
+                <div className={s.logo}>
+                    <div className={s['logo-telegram']}>
+                        <img src="bg.jpg" alt="Логотип" />
+                    </div>
                     <div className={s.search}>
-                        <input type="text" placeholder="Поиск..."/>
+                        <input type="text" placeholder="Поиск..." />
                     </div>
                     <div className={s['region-select']}>
                         <select>
@@ -19,24 +23,11 @@ const Header = () => {
                             <option value="Талас">Талас</option>
                             <option value="Жалал-Абад">Жалал-Абад</option>
                         </select>
+                    </div><div className={s.centeredText}>
                     </div>
                 </div>
 
                 {/* Second Block: Logo and Telegram Link */}
-                <div className={s['logo-telegram']}>
-                    <div className={s.logo}>
-                        <img src="1.jpg" alt="Логотип"/>
-                    </div>
-                    <div className={s.centeredText}>
-                        Официальный Портал Государственных Закупок Кыргызской Республики
-                    </div>
-                    <div className={s.telegram}>
-                        <a href="https://web.telegram.org/a/" target="_blank" rel="noopener noreferrer">
-                            <img src="tg.svg" alt="Telegram"/>
-                        </a>
-                    </div>
-                </div>
-
 
                 <nav>
                     <ul className={s['navbar']}>
@@ -60,7 +51,12 @@ const Header = () => {
                         </select>
                     </div>
                 </nav>
+
             </div>
+
+
+
+        </div>
         </header>
     );
 };
