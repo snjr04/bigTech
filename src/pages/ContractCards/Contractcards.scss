@@ -1,39 +1,47 @@
 
-.title-container {
+.ContractsCard {
     
     max-width: 1200px;
     margin: 20px auto;
   }
-.info-container {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    max-width: 1200px;
-    margin: 20px auto;
-  
-    .info-section {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 10px;
-  
-      h3 {
-        font-size: 18px;
-        font-weight: bold;
-      }
-  
-      p {
-        font-size: 16px;
-      }
+
+.contractCards-container {
+  max-width: 1200px;
+  display: flex; /* Используем flexbox для разделения на две части */
+  margin: 20px 25px;
+
+  .left-section {
+    flex: 90%; /* Левая сторона занимает 70% */
+   
+}
+
+.right-section {
+    flex: 30%;/* Правая сторона занимает 30% */
+}
+
+h4 a,
+.contract-maindetails a {
+    color:rgb(78, 78, 78);
+    text-decoration: none;
+    padding-top: 10px;
+    transition: font-weight 0.5s;
+    font-size: 20px;
+}
+
+h3 {
+    padding-top: 10px;
+    color: rgba(70, 70, 70, 0.596);
+    font-size: 20px;
+} 
+.contractcards-maindetails{
+      font-size: 30px;
     }
-  
-    .divider {
-      border: 0;
-      border-top: 1px solid #ccc;
-      margin: 10px 0;
-    }
+
+// &:hover h4 a,
+// &:hover .contract-maindetails a {
+//     color: rgba(2, 95, 235, 0.973);
+// }
   }
-  
   button {
     
     margin-bottom: 10px;
@@ -56,5 +64,282 @@
     margin-bottom: 10px;
     margin-left: 15px;
 
+   
+
+  }
+
+  .infor-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1250px;
+  margin:40px auto;
+  background-color: rgba(229, 229, 229, 0.456);
+  border-radius: 15px ;
+
+  .top {
+    background-color: #0074d9;
+    padding: 25px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .bottom {
+    display: flex;
+    margin-top: 15px;
+
+    .left {
+      width: 50%;
+      font-size: 25px;
+      color: rgb(78, 78, 78);
+      padding-bottom: 15px;
+    }
+
+    .right {
+      width: 50%;
+      font-size: 25px;
+      color: rgb(42, 42, 42);
+      padding-bottom: 15px;
+    }
+  }
+}
+  
+
+.info-container {
+  display: flex;
+  align-items: center;
+}
+
+.contractcards-price{
+  font-size: 30px;
+  padding-bottom: 180px;
+  &__under{
+    font-size: 22px;
+  }
+}
+
+.about_organization{
+  margin: 20px 25px;
+
+  .bottom {
+    display: flex;
+    margin-top: 15px;
+
+    .left {
+      width: 50%;
+      font-size: 25px;
+      color: rgb(78, 78, 78);
+      padding-bottom: 15px;
+    }
+
+    .right {
+      width: 50%;
+      font-size: 25px;
+      color: rgb(42, 42, 42);
+      padding-bottom: 15px;
+    }
+  }
+}
+
+
+.accordion {
+  background-color: #0074d9;
+  color: #fff;
+  border-radius: 15px 15px 0 0;
+  cursor: pointer;
+  padding: 25px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+
+ 
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #00529a;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.panel {
+  
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+
+  .bottom {
+    display: flex;
+    margin-top: 15px;
+
+    .left {
+      width: 50%;
+      font-size: 25px;
+      color: rgb(78, 78, 78);
+      padding-bottom: 15px;
+    }
+
+    .right {
+      width: 50%;
+      font-size: 25px;
+      color: rgb(42, 42, 42);
+      padding-bottom: 15px;
+    }
+  }
+}
+
+.accordion:after {
+  content: '\02795';
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; 
+}
+
+.submit-button {
+  margin-top: 20px;
+  button {
+     padding: 15px;
+  }
+ 
+}
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:300|Roboto:300,500');
+
+$spacing: 24px;
+$plus-size: 16px;
+$plus-thickness: 2px;
+$speed: 300ms;
+$easing: ease-in-out;
+$gray-dark: #546E7A;
+$gray: #CFD8DC;
+$gray-light: #ECEFF1;
+$primary: #00ACC1;
+
+html, body {
+  min-height: 100%;
+}
+
+html {
+  overflow-y: scroll;
+  font-size: 18px;
+}
+
+body {
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: Roboto, sans-serif;
+  line-height: 1.4;
+  color: $gray-dark;
+  background-color: $gray-light;
+}
+
+p, ul, li {
+  margin: 0;
+  padding: 0;
+  margin-bottom: $spacing;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a { color: $primary; }
+
+code { background: $gray-light; }
+
+.wrapper {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.details-group {
+  border: 1px solid $gray;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.details {
+  overflow: hidden;
+  border-bottom: 1px solid $gray;
+  transition: height $speed $easing;
+  
+  &:last-child {
+    border-bottom: 0;
   }
   
+  &__summary,
+  &__content {
+    padding: $spacing;
+  }
+  
+  &__summary {
+    position: relative;
+    list-style: none; // Hide the marker (proper method)
+    padding-left: $spacing*2;
+    outline: 0;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-family: Oswald;
+    text-transform: uppercase;
+    transition: color $speed $easing;
+    
+    [open] > & {
+      color: $primary;
+    }
+    
+    // Hide the marker in Webkit
+    &::-webkit-details-marker {
+      display: none;
+    }
+    
+    // Our replacement marker
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+    }
+    
+    &:before {
+      left: $spacing/2 + $plus-size/2;
+      top: 50%;
+      height: $plus-thickness;
+      margin-top: -$plus-thickness/2;
+      width: $plus-size;
+      background: $primary;
+    }
+    
+    &:after {
+      left: $spacing/2 + $plus-size;
+      top: 50%;
+      height: $plus-size;
+      margin-top: -$plus-size/2;
+      width: $plus-thickness;
+      margin-left: -$plus-thickness/2;
+      background: $primary;
+      transition: all $speed $easing;
+    }
+    
+    [open] &:after {
+      opacity: 0;
+      transform: translateY(25%);
+    }
+  }
+  
+  &__content {
+    padding-top: 0;
+    padding-left: $spacing*2; 
+  }
+}

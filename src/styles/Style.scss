@@ -7,16 +7,19 @@
     font-style: normal;
 
 }
+body{
+    background: #fff!important;
+}
 
 button{
     cursor: pointer;
     border: none;
 }
 .container{
-    max-width: 1800px;
-    padding: 0 20px;
+    max-width: 1600px;
     margin: 0 auto;
 }
+
 
 
 
@@ -31,5 +34,4 @@ button{
 @import "companies.scss";
 @import "catalog.scss";
 @import "notfound";
-@import "map1";
 @import "messenger";
