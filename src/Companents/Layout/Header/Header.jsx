@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Header.module.css';
+import s from './Header.module.scss';
 
 const Header = () => {
     return (
@@ -43,20 +43,20 @@ const Header = () => {
                         <li><a href="#">Тендер</a></li>
                         <li><a href="/Contracts">Закупки</a></li>
                         <li><a href="/Catalog">Каталог</a></li>
-                        <li><a href="#">Планы</a></li>
+                        <li><a href="/Plans">Планы</a></li>
                         <li><a href="#">Документы</a></li>
-                        <li><a href="#">Часто задаваемые вопросы</a></li>
+                        <li><a href="/Questions">Часто задаваемые вопросы</a></li>
                         <li><a href="/news">Новости</a></li>
                     </ul>
                     <div className={s['menu-select']}>
                         <select>
-                            <option><a>Закупки</a></option>
-                            <option><a href="/Contract">Контракты</a></option>
-                            <option><a href="/Catalog">Каталог</a></option>
-                            <option><a>Планирование</a></option>
-                            <option><a>Объявление</a></option>
-                            <option><a>Аналитические данные</a></option>
-                            <option href="/news"><a href="/news">News</a></option>
+                            <option>Закупки</option>
+                            <option>Контракты</option>
+                            <option>Каталог</option>
+                            <option>Планирование</option>
+                            <option>Объявление</option>
+                            <option>Аналитические данные</option>
+                            <option >News</option>
                         </select>
                     </div>
                 </nav>

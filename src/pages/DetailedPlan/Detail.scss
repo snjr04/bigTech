@@ -1,0 +1,18 @@
+.detailed-plan {
+    max-width: 800px;
+    margin: 0 auto; /* Выравниваем блок по центру */
+    padding: 40px; /* Добавляем отступы вокруг блока */
+    text-align: left;
+  
+    .section {
+      margin-bottom: 20px;
+  
+      h2 {
+        color: #0074d9; /* Названия делаем голубыми */
+      }
+  
+      p {
+        color: #333; /* Цвет текста */
+      }
+    }
+  }

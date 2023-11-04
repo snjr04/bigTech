@@ -9,6 +9,9 @@ import Companies from "./Companents/Companies/Companies";
 import Contracts from './pages/Contract/Contract';
 import ContractsCard from './pages/ContractCards/ContractCard';
 import NotFound from "./pages/NotFound";
+import Plans from "./pages/Plans/Plans"
+import DetailedPlan from './pages/DetailedPlan/DetailedPlan';
+import Questions from './pages/Questions/Questions.jsx'
 
 
 
@@ -25,6 +28,9 @@ function App() {
                     <Route element={<Companies/>} path="/comp"/>
                     <Route element={<Contracts/>} path="/Contracts"/>
                     <Route element={<ContractsCard />} path="/Contracts/contractsCard" />
+                    <Route element={<Plans/>} path="/Plans"/>
+                    <Route element={<DetailedPlan/>} path="/DetailedPlan"/>
+                    <Route element={<Questions/>} path="/Questions"/>
                 </Route>
                 <Route element={<NotFound/>} path="*"/>
             </Routes>
