@@ -75,26 +75,17 @@ a.text{
 .text {
   font-size: 18px; /* Размер шрифта */
 
-  color: #00d974;; /* Цвет текста (белый) */
+  color: #00dd76;; /* Цвет текста (белый) */
   margin-left: 10px; /* Отступ слева от текста для выравнивания */
   margin-bottom: 10px;
   transition: all 0.3s;
+    &:hover{
+      text-decoration: underline;
+    }
 }
 
-.text:hover{
-  text-decoration: underline;
-}
 
-
-a.text {
-  font-size: 14px; /* Размер шрифта */
-  color: #fff; /* Цвет текста (белый) */
-  margin-left: 10px; /* Отступ слева от текста для выравнивания */
-  display: inline-block; /* Добавляет блочный элемент для корректного размещения текста */
-}
 
 .light {
   color: white;
-
-
 }

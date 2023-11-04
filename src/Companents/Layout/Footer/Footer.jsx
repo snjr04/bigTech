@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './footer.module.css';
+import style from './footer.module.scss';
 
 const Footer = () => {
     const scrollToTop = () => {
@@ -29,8 +29,8 @@ const Footer = () => {
                     <h1>Контакты</h1>
                     <br />
                     <div className="contact-section_left">
-                        <a href="tel=+999 (999) 99 99 99" >
-                           <p className={style['light']}>+996 (999) 99 99 99</p>
+                        <p className={style['light']}>+996 (999) 99 99 99</p>
+                        <a href="https://t.me/ваш-telegram-канал" target="_blank" rel="noopener noreferrer" >
                            <p className={style['text']}><strong>t.me/BigTech</strong></p>
                         </a>
                     </div>
