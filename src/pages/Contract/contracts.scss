@@ -1,17 +1,17 @@
-
+.contracts {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 10px;
+}
 
 .contract-container {
     max-width: 1200px;
     display: flex; /* Используем flexbox для разделения на две части */
-    border: 1px solid rgba(128, 128, 128, 0.521);
-    padding: 10px;
+    padding: 15px;
     margin: 20px auto;
-    
+    background-color: #fff;
     transition: all 0.3s; /* Добавляем плавный переход при hover */
 
     &:hover {
-        border: 1px solid #0074d9; /* Изменяем цвет границы при hover */
-        padding: 15px; /* Увеличиваем внутренний отступ при hover */
         transform: scale(1.02); /* Увеличиваем размер блока при hover */
     }
 
@@ -26,31 +26,67 @@
 
     h4 a,
     .contract-maindetails a {
-        color:#0074d9;
+        color:rgb(78, 78, 78);
         text-decoration: none;
         padding-top: 10px;
         transition: font-weight 0.5s;
+        font-size: 20px;
     }
 
     h3 {
         padding-top: 10px;
-        padding-bottom: 10px;
         color: rgba(70, 70, 70, 0.596);
     }
 
-    &:hover h4 a,
-    &:hover .contract-maindetails a {
+  a {
+    &:hover{
         color: rgba(2, 95, 235, 0.973);
-        font-weight:700;
     }
+}
+
 
 }
+
+
 .contract-price {
     font-size: 20px;
-    color: #0074d9 ;
+    color: rgb(78, 78, 78) ;
     font-weight: bold;
+    padding-bottom: 100px;
+    &__under{
+        font-weight: bold;
+        font-size: 20px;
+        color: rgba(2, 95, 235, 0.973) ;
+    }
 }
 p  {
     text-decoration: none;
     color: rgb(78, 78, 78);
+}
+
+.contract-container {
+    display: flex;
+    align-items: center;
+}
+
+.left-section {
+    flex: 1;
+    border-right: 1px solid gray; /* Вертикальная серая линия */
+    padding-right: 10px; /* Добавьте отступ справа от линии, если необходимо */
+}
+
+.right-section {
+    flex: 1;
+    padding-left: 40px; /* Добавьте отступ слева от линии, если необходимо */
+}
+
+.aplication {
+    display: flex;
+    align-items:center;
+&::before{
+    content: '•'; /* Вставляем символ круглой точки */
+    color: green; /* Зеленый цвет */
+    margin-right: 5px; /* Добавляем небольшой отступ между точкой и текстом */
+    font-size: 30px; /* Размер точки */
+}
 }
