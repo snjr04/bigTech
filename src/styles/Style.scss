@@ -13,7 +13,7 @@ button{
     border: none;
 }
 .container{
-    max-width: 1600px;
+    max-width: 1800px;
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -31,4 +31,5 @@ button{
 @import "companies.scss";
 @import "catalog.scss";
 @import "notfound";
-
+@import "map1";
+@import "messenger";

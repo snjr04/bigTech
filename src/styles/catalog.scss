@@ -6,7 +6,6 @@
   &__title{
     font-size: 50px;
     font-weight: 500;
-    padding: 100px 0;
     color: #334059;
   }
   &__items{
@@ -15,21 +14,25 @@
     flex-wrap: wrap;
   }
   &__item{
+    display: block;
     border: 1px solid #0065dd;
     border-radius: 5px;
-    padding: 60px;
-    align-content: center;
+    width: 330px;
+    height: 330px;
+    align-items: center;
+    justify-content: center;
     background: #fff;
     &-logo{
-      padding-left: 40px;
+      padding-left: 90px;
     }
     &-title{
       font-size: 26px;
       font-weight: 500;
+      padding:0 0 0 100px;
     }
     &-info{
       color: #909ebb;
-      padding-left: 65px;
+      padding-left: 95px;
     }
   }
 }

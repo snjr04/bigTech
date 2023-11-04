@@ -12,6 +12,7 @@ import NotFound from "./pages/NotFound";
 import Plans from "./pages/Plans/Plans"
 import DetailedPlan from './pages/DetailedPlan/DetailedPlan';
 import Questions from './pages/Questions/Questions.jsx'
+import Messenger from "./pages/Messenger/Messenger";
 
 
 
@@ -33,6 +34,7 @@ function App() {
                     <Route element={<Questions/>} path="/Questions"/>
                 </Route>
                 <Route element={<NotFound/>} path="*"/>
+                <Route element={<Messenger/>} path="/message"/>
             </Routes>
         </BrowserRouter>
     )

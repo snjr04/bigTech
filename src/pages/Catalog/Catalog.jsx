@@ -1,5 +1,6 @@
 import React from 'react';
 import {CiMedicalCase} from 'react-icons/ci'
+import {IoIosConstruct} from 'react-icons/io'
 import {Link} from "react-router-dom";
 
 const Catalog = () => {
@@ -17,8 +18,8 @@ const Catalog = () => {
                             <p className="catalog__item-info">47556 позиции</p>
                         </Link>
                         <Link to="/catalog/info" className="catalog__item">
-                            <span className="catalog__item-logo"><CiMedicalCase color="#0065dd" size="150"/></span>
-                            <h3 className="catalog__item-title">медицинские иззделия</h3>
+                            <span className="catalog__item-logo"><IoIosConstruct color="#0065dd" size="150"/></span>
+                            <h3 className="catalog__item-title">Строительство</h3>
                             <p className="catalog__item-info">47556 позиции</p>
                         </Link>
                         <Link to="/catalog/info" className="catalog__item">
