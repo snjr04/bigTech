@@ -5,17 +5,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import {Pagination, Navigation} from 'swiper/modules';
 import {AiOutlineClose} from 'react-icons/ai'
-import GoogleMapReact from 'google-map-react';
 
 const MapBanner = () => {
 
-    const defaultProps = {
-        center: {
-            lat: 10.99835602,
-            lng: 77.01502627
-        },
-        zoom: 11
-    };
     const [isOpen, setIsOpen] = useState(false);
 
     const [currentArea, setCurrentArea] = useState('');
@@ -297,11 +289,7 @@ l31 -17 19 31 c17 28 18 34 5 48 -8 9 -15 23 -15 31 0 22 104 63 138 54 22 -5
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="container">
-                                <GoogleMapReact
-                                    defaultCenter={defaultProps.center}
-                                    defaultZoom={defaultProps.zoom}
-                                >
-                                </GoogleMapReact>
+                                \
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>Slide 3</SwiperSlide>
