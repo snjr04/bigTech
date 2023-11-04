@@ -3,20 +3,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 60px;
     padding: 30px 180px 30px 180px; /* Увеличиваем отступы слева и справа */
+    margin-top: 40px;
+
   
     .plan {
       width: 100%;
-      border: 1px solid #ccc;
-      padding: 20px; /* Увеличиваем внутренний отступ */
-      background-color: #f9f9f9;
+      box-shadow: 1px 1px 8px rgba(70, 160, 202, 0.551);
+      padding: 40px; /* Увеличиваем внутренний отступ */
+      background-color: white;
       transition: all 0.3s;
       transform: scale(1);
+      border: none;
+      border-radius: 10px;
   
       &:hover {
-        border: 1px solid #0074d9;
-        transform: scale(1.05); /* Увеличиваем размер блока при hover */
+        transform:scale(1.02);
+        background-color: aliceblue;
+        box-shadow: 1px 1px 8px rgb(0, 149, 255);
       }
   
       .plan-title {
@@ -25,11 +30,6 @@
         a {
           text-decoration: none;
           color: #0074d9; /* Исходный цвет текста */
-          transition: color 0.3s; /* Плавное изменение цвета при hover */
-        }
-        &:hover {
-          transform: scale(1.01); /* Увеличиваем размер названия плана при наведении */
-          color: #33f5ff; /* Новый цвет текста при наведении */
         }
       }
   
@@ -55,7 +55,7 @@
           font-size: 20px;
           margin-top: 10px;
           text-align: right; /* Выравниваем amount по правому краю */
-          color: #0074d9;
+          color: rgba(2, 235, 196, 0.973) ;
           flex: 30%; /* Занимает 30% правой стороны блока */
         }
   
@@ -63,6 +63,7 @@
           margin-top: 5px;
           margin-left: auto; /* Добавляем отступ справа для date, чтобы выровнять его по правому краю */
           flex: 30%; /* Занимает 30% правой стороны блока */
+          color: rgba(2, 235, 196, 0.973) ;
         }
       }
     }

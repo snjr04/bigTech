@@ -1,16 +1,16 @@
 import React, {useState} from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Pagination, Navigation} from 'swiper/modules';
+import {Pagination, Navigation} from 'swiper/modules';
 import {AiOutlineClose} from 'react-icons/ai'
-import {FaTelegram} from 'react-icons/fa'
 
 const MapBanner = () => {
+
     const [isOpen, setIsOpen] = useState(false);
 
-    const [currentArea,setCurrentArea] = useState('');
+    const [currentArea, setCurrentArea] = useState('');
 
     const fillColorActive = "rgb(49, 22, 219)"
 
@@ -22,7 +22,7 @@ const MapBanner = () => {
         console.log(clickedArea)
     };
 
-    const handleClose = () =>{
+    const handleClose = () => {
         setIsOpen(false)
         setCurrentArea('')
     }
@@ -45,32 +45,37 @@ const MapBanner = () => {
                             <div className="container">
 
 
-                            <div className="map__items">
-                                <aside className="map__item">
-                                    <div className="map__list">
-                                        <h3 className="map__menu-title">ОТНОСИТЕЛЬНАЯ ЭКОНОМИЯ <br/> ПО ЗАКЛЮЧЕННЫМ КОНТРАКТАМ <br/> В РАЗРЕЗЕ СУБЪЕКТОВ РФ
-                                        </h3>
-                                        <p className="map__menu-text">Регион определяется исходя из <br/>
-                                            информации об источнике <br/>
-                                            финансирования заказчика</p>
-                                        <div className="map__info">
-                                            <div className="map__info-info">менее 2 %</div>
-                                            <div className="map__info-info"> 2 — 4 %</div>
-                                            <div className="map__info-info"> 4 — 6 %</div>
-                                            <div className="map__info-info"> 6 — 8 %</div>
-                                            <div className="map__info-info"> более 8 %</div>
+                                <div className="map__items">
+                                    <aside className="map__item">
+                                        <div className="map__list">
+                                            <h3 className="map__menu-title">ОТНОСИТЕЛЬНАЯ ЭКОНОМИЯ <br/> ПО ЗАКЛЮЧЕННЫМ
+                                                КОНТРАКТАМ <br/> В РАЗРЕЗЕ СУБЪЕКТОВ РФ
+                                            </h3>
+                                            <p className="map__menu-text">Регион определяется исходя из <br/>
+                                                информации об источнике <br/>
+                                                финансирования заказчика</p>
+                                            <div className="map__info">
+                                                <div className="map__info-info">менее 2 %</div>
+                                                <div className="map__info-info"> 2 — 4 %</div>
+                                                <div className="map__info-info"> 4 — 6 %</div>
+                                                <div className="map__info-info"> 6 — 8 %</div>
+                                                <div className="map__info-info"> более 8 %</div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </aside>
-                                <div className="map__line"></div>
-                                <div className="map__item">
-                                    <svg id="map-of-kr" fill="#576FA0" version="1.0" xmlns="http://www.w3.org/2000/svg"
-                                         width="626.000000pt" height="626.000000pt" viewBox="0 0 626.000000 626.000000"
-                                         preserveAspectRatio="xMidYMid meet">
+                                    </aside>
+                                    <div className="map__line"></div>
+                                    <div className="map__item">
+                                        <svg id="map-of-kr" fill="#576FA0" version="1.0"
+                                             xmlns="http://www.w3.org/2000/svg"
+                                             width="626.000000pt" height="626.000000pt"
+                                             viewBox="0 0 626.000000 626.000000"
+                                             preserveAspectRatio="xMidYMid meet">
 
-                                        <g transform="translate(0.000000,626.000000) scale(0.100000,-0.100000)"
-                                           fill="#000000" stroke="none">
-                                            <path onClick={handleClick} id="chui" fill={currentArea === "chui" ? fillColorActive : '#576FA0'} cursor="pointer" d="M2912 4576 c24 -29 -68 -50 -113 -26 -16 9 -19 7 -19 -13 0 -28 -17
+                                            <g transform="translate(0.000000,626.000000) scale(0.100000,-0.100000)"
+                                               fill="#000000" stroke="none">
+                                                <path onClick={handleClick} id="chui"
+                                                      fill={currentArea === "chui" ? fillColorActive : '#576FA0'}
+                                                      cursor="pointer" d="M2912 4576 c24 -29 -68 -50 -113 -26 -16 9 -19 7 -19 -13 0 -28 -17
 -47 -42 -47 -10 0 -26 -4 -36 -10 -9 -5 -34 -16 -54 -24 -52 -21 -92 -86 -89
 -146 2 -33 -3 -53 -17 -70 -33 -43 -36 -85 -11 -152 19 -51 24 -57 32 -41 5
 10 11 19 12 21 5 6 75 -29 75 -38 0 -20 -50 -88 -67 -93 -10 -3 -54 -5 -97 -5
@@ -91,7 +96,9 @@ const MapBanner = () => {
 -117 11 -39 0 -75 5 -78 10 -11 18 -176 90 -204 90 -19 0 -42 15 -76 50 -27
 28 -56 50 -63 50 -8 0 -27 11 -44 25 -16 14 -37 25 -45 25 -9 0 -26 8 -37 17
 -12 10 -18 14 -14 9z"/>
-                                            <path onClick={handleClick} fill={currentArea === "isyk-kul" ? fillColorActive : '#576FA0'} id="isyk-kul" d="M4490 4370 c-8 -5 -25 -10 -38 -10 -12 0 -35 -13 -51 -29 -42 -42
+                                                <path onClick={handleClick}
+                                                      fill={currentArea === "isyk-kul" ? fillColorActive : '#576FA0'}
+                                                      id="isyk-kul" d="M4490 4370 c-8 -5 -25 -10 -38 -10 -12 0 -35 -13 -51 -29 -42 -42
 -63 -51 -130 -51 -33 0 -63 -5 -66 -10 -4 -6 -18 -11 -33 -11 -15 0 -49 -1
 -77 -2 -27 0 -54 -7 -60 -13 -5 -7 -29 -17 -52 -24 -27 -7 -49 -21 -63 -40
 -15 -21 -30 -30 -48 -30 -15 0 -38 -7 -50 -16 -18 -13 -29 -14 -54 -5 -28 10
@@ -113,7 +120,9 @@ const MapBanner = () => {
 -8 -179 9 -261 36 -47 15 -67 17 -88 9 -34 -13 -180 -13 -225 0 -22 6 -40 6
 -52 -1 -14 -7 -27 -5 -49 6 -27 14 -33 14 -59 1 -26 -14 -30 -14 -41 -1 -14
 17 -58 20 -80 5z"/>
-                                            <path onClick={handleClick} fill={currentArea === "talas" ? fillColorActive : '#9AA9C6'} id="talas" d="M1680 4311 c-19 -4 -47 -15 -63 -25 -25 -17 -29 -17 -46 -2 -20 18
+                                                <path onClick={handleClick}
+                                                      fill={currentArea === "talas" ? fillColorActive : '#9AA9C6'}
+                                                      id="talas" d="M1680 4311 c-19 -4 -47 -15 -63 -25 -25 -17 -29 -17 -46 -2 -20 18
 -56 21 -66 6 -3 -5 -17 -10 -29 -10 -13 0 -35 -9 -49 -20 -14 -11 -30 -20 -35
 -20 -12 0 -22 -24 -22 -50 0 -13 -9 -20 -27 -22 -21 -2 -29 -9 -31 -27 -2 -13
 1 -28 7 -34 18 -18 12 -30 -11 -24 -27 7 -49 -9 -41 -29 3 -9 -6 -27 -21 -43
@@ -127,7 +136,9 @@ const MapBanner = () => {
 14 -7 5 -29 7 -50 4 -21 -4 -58 -3 -82 1 -35 7 -48 15 -61 38 -20 36 -59 57
 -112 60 -23 1 -54 14 -80 31 -32 22 -53 29 -92 30 -55 0 -129 19 -161 41 -21
 14 -23 14 -75 4z"/>
-                                            <path onClick={handleClick} fill={currentArea === "naryn" ? fillColorActive : '#EEF1F6'} id="naryn" d="M3537 4028 c-10 -5 -28 -7 -40 -4 -11 3 -41 1 -64 -5 -30 -6 -50 -6
+                                                <path onClick={handleClick}
+                                                      fill={currentArea === "naryn" ? fillColorActive : '#e0e6ff'}
+                                                      id="naryn" d="M3537 4028 c-10 -5 -28 -7 -40 -4 -11 3 -41 1 -64 -5 -30 -6 -50 -6
 -64 2 -15 8 -24 7 -35 -2 -12 -10 -17 -10 -23 -1 -9 15 -101 5 -101 -11 0 -6
 7 -18 16 -28 23 -25 11 -49 -25 -49 -19 0 -34 -8 -44 -24 -15 -21 -21 -23
 -100 -21 -83 2 -84 1 -94 -25 -8 -20 -7 -29 3 -36 11 -7 9 -22 -9 -76 -18 -57
@@ -156,7 +167,9 @@ c-32 -5 -48 -3 -68 10 l-27 18 23 18 c13 11 34 19 47 19 16 0 24 6 24 18 0 17
 l20 21 -31 43 c-26 34 -30 46 -21 64 7 16 5 29 -6 50 -18 31 -29 33 -56 12
 -26 -20 -27 -20 -77 19 -33 26 -47 32 -60 25 -23 -12 -27 -12 -31 5 -2 11 -7
 12 -21 4z"/>
-                                            <path onClick={handleClick} fill={currentArea === "jalal-abad" ? fillColorActive : '#BCC5D9'} id="jalal-abad" d="M1398 3873 c-6 -7 -17 -13 -26 -13 -8 0 -37 -13 -64 -30 -26 -16 -59
+                                                <path onClick={handleClick}
+                                                      fill={currentArea === "jalal-abad" ? fillColorActive : '#BCC5D9'}
+                                                      id="jalal-abad" d="M1398 3873 c-6 -7 -17 -13 -26 -13 -8 0 -37 -13 -64 -30 -26 -16 -59
 -30 -72 -30 -18 0 -27 -9 -39 -40 -13 -34 -20 -40 -45 -40 -35 0 -96 -42 -135
 -93 -18 -23 -55 -51 -98 -72 -38 -20 -69 -42 -69 -50 0 -17 34 -40 72 -49 15
 -3 35 -17 44 -31 20 -30 29 -31 78 -5 41 20 76 14 76 -14 0 -8 7 -19 15 -26 9
@@ -184,7 +197,9 @@ l31 -17 19 31 c17 28 18 34 5 48 -8 9 -15 23 -15 31 0 22 104 63 138 54 22 -5
 15 -3 10 -19 15 -46 15 -37 0 -42 -3 -55 -35 -24 -55 -44 -59 -109 -25 -30 17
 -67 30 -81 30 -14 0 -38 8 -52 18 -22 13 -49 17 -136 17 -75 0 -112 -4 -119
 -12z"/>
-                                            <path onClick={handleClick} fill={currentArea === "osh" ? fillColorActive : '#798CB3'} id="osh" d="M2602 3129 c-12 -18 -20 -20 -54 -15 -34 6 -43 3 -55 -14 -8 -11 -24
+                                                <path onClick={handleClick}
+                                                      fill={currentArea === "osh" ? fillColorActive : '#798CB3'}
+                                                      id="osh" d="M2602 3129 c-12 -18 -20 -20 -54 -15 -34 6 -43 3 -55 -14 -8 -11 -24
 -20 -37 -20 -28 0 -46 -18 -46 -45 0 -30 -28 -65 -53 -65 -18 0 -19 -2 -7 -10
 13 -8 13 -11 0 -24 -8 -8 -28 -17 -44 -20 -16 -3 -36 -12 -45 -19 -9 -8 -35
 -24 -58 -36 -33 -17 -43 -27 -43 -46 0 -20 -5 -25 -24 -25 -13 0 -30 -10 -38
@@ -209,7 +224,9 @@ l31 -17 19 31 c17 28 18 34 5 48 -8 9 -15 23 -15 31 0 22 104 63 138 54 22 -5
 -134 118 -51 55 -109 109 -130 120 -28 15 -38 26 -38 45 0 39 -26 28 -68 -28
 -42 -55 -55 -58 -83 -15 -16 25 -16 26 11 48 15 12 26 27 24 33 -2 6 -10 2
 -17 -10z"/>
-                                            <path onClick={handleClick} fill={currentArea === "batken" ? fillColorActive : '#EEF1F6'} id="batken" d="M1350 2625 c-8 -10 -31 -15 -71 -15 -56 0 -58 -1 -61 -27 -3 -25 -8
+                                                <path onClick={handleClick}
+                                                      fill={currentArea === "batken" ? fillColorActive : '#e0e6ff'}
+                                                      id="batken" d="M1350 2625 c-8 -10 -31 -15 -71 -15 -56 0 -58 -1 -61 -27 -3 -25 -8
 -28 -44 -31 -26 -2 -49 -11 -59 -23 -10 -10 -28 -19 -40 -19 -25 0 -35 -17
 -35 -59 0 -33 -16 -51 -46 -51 -13 0 -26 -4 -29 -10 -9 -15 -35 -12 -35 4 0 8
 11 23 25 34 41 33 35 42 -41 57 -17 3 -42 17 -54 31 -14 14 -35 24 -50 24 -15
@@ -228,51 +245,56 @@ l31 -17 19 31 c17 28 18 34 5 48 -8 9 -15 23 -15 31 0 22 104 63 138 54 22 -5
 -74 25 -29 -11 -57 -15 -77 -11 -28 6 -36 2 -58 -25 -32 -39 -59 -34 -59 11 0
 35 -15 39 -39 9 -14 -18 -21 -20 -38 -10 -12 6 -24 19 -27 29 -3 9 -28 25 -55
 35 -59 21 -56 21 -71 2z"/>
-                                        </g>
-                                    </svg>
-                                    {isOpen && (
-                                        <div className="popup">
-                                            <div className="popup__menu">
-                                                <h2 className="popup__title">область</h2>
-                                                <div className="popup__items">
-                                                    <div className="popup__item">
-                                                        <p className="popup__price">6,15%</p>
-                                                        <p className="popup__text">Относительная экономия при <br/> заключении контрактов</p>
+                                            </g>
+                                        </svg>
+                                        {isOpen && (
+                                            <div className="popup">
+                                                <div className="popup__menu">
+                                                    <h2 className="popup__title">область</h2>
+                                                    <div className="popup__items">
+                                                        <div className="popup__item">
+                                                            <p className="popup__price">6,15%</p>
+                                                            <p className="popup__text">Относительная экономия
+                                                                при <br/> заключении контрактов</p>
+                                                        </div>
+                                                        <div className="map__line"></div>
+                                                        <div className="popup__item">
+                                                            <p className="popup__price">2,39 млрд C</p>
+                                                            <p className="popup__text">Экономия при
+                                                                заключении <br/> контрактов</p>
+                                                        </div>
                                                     </div>
-                                                    <div className="map__line"></div>
-                                                    <div className="popup__item">
-                                                        <p className="popup__price">2,39 млрд C</p>
-                                                        <p className="popup__text">Экономия при заключении <br/> контрактов</p>
-                                                    </div>
+                                                    <div className="popup__line"></div>
+                                                    <h3 className="popup__subtitle">Региональные заказчики: 1,42 млрд C
+                                                        (5,25%)</h3>
+                                                    <p className="popup__subtext">из них органы государственной власти,
+                                                        казённые учреждения и иные ПБС: <span className="popup__info">0,68 млрд C (4,03%)Муниципальные заказчики: 0,96 млрд ₽ (8,27%)</span>
+                                                    </p>
+                                                    <h3 className="popup__subtitle">Муниципальные заказчики: 0,96 млрд ₽
+                                                        (8,27%)</h3>
+                                                    <p className="popup__subtext">из них органы местного самоуправления,
+                                                        в том числе их территориальные
+                                                        органы, муниципальные казённые учреждения и иные ПБС: <span
+                                                            className="popup__info">0,64 млрд C (6,82%)</span></p>
+                                                    <div className="popup__line"></div>
                                                 </div>
-                                                <div className="popup__line"></div>
-                                                <h3 className="popup__subtitle">Региональные заказчики: 1,42 млрд C (5,25%)</h3>
-                                                <p className="popup__subtext">из них органы государственной власти, казённые учреждения и иные ПБС: <span className="popup__info">0,68 млрд C (4,03%)Муниципальные заказчики: 0,96 млрд ₽ (8,27%)</span></p>
-                                                <h3 className="popup__subtitle">Муниципальные заказчики: 0,96 млрд ₽ (8,27%)</h3>
-                                                <p className="popup__subtext">из них органы местного самоуправления, в том числе их территориальные
-                                                    органы, муниципальные казённые учреждения и иные ПБС: <span className="popup__info">0,64 млрд C (6,82%)</span></p>
-                                                <div className="popup__line"></div>
+                                                <div className="popup__close" onClick={handleClose}>
+                                                    <AiOutlineClose size="25"/>
+                                                </div>
                                             </div>
-                                            <div className="popup__close" onClick={handleClose}>
-                                               <AiOutlineClose size="25"/>
-                                            </div>
-                                        </div>
-                                    )}
+                                        )}
+                                    </div>
                                 </div>
-                            </div>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="container">
-
+                                \
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>Slide 3</SwiperSlide>
                     </Swiper>
                 </div>
-            </div>
-            <div className="telegram">
-            <FaTelegram className="telegram-img"/>
             </div>
         </section>
     );

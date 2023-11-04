@@ -18,18 +18,20 @@
 }
 
 .news-blocks {
-  width: 70%;
+  width: 100%;
 }
 
 .news-block {
   background-color: #3498db; /* Голубой цвет */
   border-radius: 10px;
-  margin: 10px;
+  margin-left:100px;
   padding: 10px;
+  margin: 30px 100px;
+  gap: 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 8px rgba(70, 160, 202, 0.551);
   transition: transform 0.2s;
   cursor: pointer;
 }
@@ -43,7 +45,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  padding: 0;
+  padding: 10px 15px;
   color: #fff;
 }
 
@@ -65,7 +67,7 @@
 
 .news-content {
   background-color: #fff;
-  padding: 10px;
+  padding: 30px;
   font-size: 16px;
   color: #666;
   border-radius: 10px; /* Добавляем закругленные углы */
@@ -73,7 +75,6 @@
 
 .special-news {
   width: 30%;
-  border-left: 3px solid #3498db;
   border-radius: 40px;
   padding: 40px;
   box-sizing: border-box;

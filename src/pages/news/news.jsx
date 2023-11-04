@@ -35,16 +35,6 @@ const News = () => {
     },
   ];
 
-  const specialNewsData = [
-    'Каталог новойстей всех',
-    'Специальная новость 1',
-    'Специальная новость 1',
-    'Специальная новость 1',
-    'Специальная новость 1',
-    'Специальная новость 1',
-    'Специальная новость 1',
-    'Специальная новость 1',
-  ];
 
   return (
     <section className={style.news}>
@@ -59,17 +49,6 @@ const News = () => {
               <div className={style['news-content']}>{news.content}</div>
             </div>
           ))}
-        </div>
-        <div className={style['special-news']}>
-          <ul>
-            {specialNewsData.map((news, index) => (
-              <li key={index}>
-                <a href="#" className={style['special-news-link']}>{news}</a>
-              </li>
-              
-            ))}
-          </ul>
-
         </div>
       </div>
     </section>

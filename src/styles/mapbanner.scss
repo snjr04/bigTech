@@ -1,5 +1,8 @@
 .map {
   position: relative;
+  &__map{
+
+  }
 
   &__items {
     display: flex;
@@ -37,7 +40,7 @@
 
       &:first-child::before {
         content: "";
-        background: #EEF1F6;
+        background: #e0e6ff;
         padding: 1px 12px;
         margin-right: 10px;
         border-radius: 4px;
@@ -104,18 +107,6 @@
   }
 }
 
-.telegram{
-    position: relative;
-    &-img{
-        height: 50px;
-        width: 50px;
-        position: fixed;
-        z-index: 99;
-        top: 45rem;
-        right: 2rem;
-      fill: #0065dd;
-    }
-}
 
 #map-of-kr{
   cursor: pointer;

@@ -7,6 +7,9 @@
     font-style: normal;
 
 }
+body{
+    background: #fff!important;
+}
 
 button{
     cursor: pointer;
@@ -14,9 +17,9 @@ button{
 }
 .container{
     max-width: 1600px;
-    padding: 0 20px;
     margin: 0 auto;
 }
+
 
 
 
@@ -31,4 +34,4 @@ button{
 @import "companies.scss";
 @import "catalog.scss";
 @import "notfound";
-
+@import "messenger";
