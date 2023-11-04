@@ -193,9 +193,8 @@ nav {
 
 /* Добавление стиля при наведении на ссылки в навигационной панели */
 .navbar a:hover {
-
-  color: #ffffff;
   text-decoration: underline;
+  transition: 0.3s;
 }
 
 .menu-select {
