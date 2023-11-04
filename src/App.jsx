@@ -12,11 +12,8 @@ import NotFound from "./pages/NotFound";
 import Plans from "./pages/Plans/Plans"
 import DetailedPlan from './pages/DetailedPlan/DetailedPlan';
 import Questions from './pages/Questions/Questions.jsx'
-<<<<<<< HEAD
 import Documents from './pages/Documents/documents.jsx'
-=======
 import Messenger from "./pages/Messenger/Messenger";
->>>>>>> d0e1859a93c2569d6f94ab20ba010657b24a66a5
 
 
 
