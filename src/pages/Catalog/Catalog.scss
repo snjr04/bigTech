@@ -1,0 +1,81 @@
+.catalog{
+  background-color: white;
+}
+.catalog__items {
+    display: flex;
+    flex-wrap: wrap; /* Перенос на следующую строку, если не помещаются */
+    justify-content: space-between; /* Равномерное распределение по горизонтали */
+    gap: 20px;
+    margin: 100px; /* Выравнивание по центру с отступами справа и слева */
+    transition: 2s;
+  
+    .catalog__item {
+      width: calc(25% - 50px); /* 25% ширины с учетом отступов */
+      background-color: white;
+      box-shadow: 1px 1px 8px rgba(70, 160, 202, 0.551);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      text-align: center;
+      padding: 50px;
+      margin-bottom: 50px; /* Отступ между блоками */
+      border: none;
+      transition: transform 0.2s ;
+    }
+    .catalog__item:hover{
+      transform:scale(1.1);
+      background-color: aliceblue;
+      box-shadow: 1px 1px 8px rgb(0, 149, 255);
+    }
+  
+    .catalog__item-icon {
+      margin-bottom: 10px;
+    }
+    
+    .catalog__item-title {
+      font-size: 16px;
+      margin-bottom: 5px;   
+      transition: transform 0.2s;
+    }
+    .catalog__item-title:hover{
+      transform:scale(1.1);
+      text-decoration: underline
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+.catalog__title-container {
+    margin-top: 30px;
+    width: 100%;
+    height: 500px;
+    padding-left: 100PX;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    background-color: white;
+    box-shadow: 1px 1px 8px rgba(70, 160, 202, 0.551);
+    
+  }
+  
+  .catalog__title {
+    font-size: 28px;
+    margin: 0; /* Убран отступ сверху и снизу */
+    padding-right: 60%;
+  }
+  
+  p {
+    font-size: 16px; /* Размер шрифта для дополнительной информации */
+    margin: 0; /* Убран отступ сверху и снизу */
+    text-decoration: none;
+  }
+*{
+    margin: 0;
+}
+
+  
+  /* Остальные стили оставьте как есть */

@@ -1,18 +1,23 @@
 .contracts {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: white;
     padding: 10px;
+    gap: 40px;
 }
 
 .contract-container {
     max-width: 1200px;
     display: flex; /* Используем flexbox для разделения на две части */
     padding: 15px;
-    margin: 20px auto;
+    margin: 30px auto;
     background-color: #fff;
     transition: all 0.3s; /* Добавляем плавный переход при hover */
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(70, 160, 202, 0.551);
 
     &:hover {
-        transform: scale(1.02); /* Увеличиваем размер блока при hover */
+        transform:scale(1.02);
+        background-color: aliceblue;
+        box-shadow: 1px 1px 8px rgb(0, 149, 255);
     }
 
     .left-section {
@@ -35,7 +40,7 @@
 
     h3 {
         padding-top: 10px;
-        color: rgba(70, 70, 70, 0.596);
+        color:  rgb(97, 172, 238);
     }
 
   a {
@@ -50,13 +55,14 @@
 
 .contract-price {
     font-size: 20px;
-    color: rgb(78, 78, 78) ;
+    color: left-section ;
     font-weight: bold;
     padding-bottom: 100px;
+    color: rgba(2, 235, 196, 0.973) ;
     &__under{
         font-weight: bold;
         font-size: 20px;
-        color: rgba(2, 95, 235, 0.973) ;
+        color: rgba(2, 235, 196, 0.973) ;
     }
 }
 p  {
