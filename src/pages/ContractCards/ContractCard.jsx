@@ -531,6 +531,17 @@ const ContractsCard = () => {
             </details>
             </section>
 </div>
+
+<div className="infor-container">
+      <div className="documents__top">
+      Документы о государственных закупках
+      </div>
+      <div className="contractCards-container">
+             <img src="../public/doc_bg.webp" alt="" className="center" />
+             <img src="../public/type.png" alt="" className="over" />
+        </div>
+      
+        </div>
      
  <div className="submit-button">
         <button>Подать заявку</button>
