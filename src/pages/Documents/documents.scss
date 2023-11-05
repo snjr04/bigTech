@@ -21,4 +21,15 @@
         
           
     }
+    .center{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .over{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        margin-top: 800px;
+        margin-left: 300px;
+    }
 }

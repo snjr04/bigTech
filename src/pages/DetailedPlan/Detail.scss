@@ -1,18 +1,29 @@
-.detailed-plan {
-    max-width: 800px;
-    margin: 0 auto; /* Выравниваем блок по центру */
-    padding: 40px; /* Добавляем отступы вокруг блока */
-    text-align: left;
-  
-    .section {
-      margin-bottom: 20px;
-  
-      h2 {
-        color: #0074d9; /* Названия делаем голубыми */
-      }
-  
-      p {
-        color: #333; /* Цвет текста */
-      }
-    }
+.detail{
+  max-width: 1200px;
+  margin: 20px auto;
+
+  &-container{
+  display: flex;
+  flex-direction: column;
+  max-width: 1250px;
+  margin:40px auto;
+  border-radius: 15px ;}
+
+  &__top{
+  background-color: rgb(70, 160, 202);
+  padding: 25px;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 15px 15px 0 0;
   }
+
+  &-maindetails{
+    color:rgb(78, 78, 78);
+    padding: 20px 25px ;
+    font-size: 20px;
+    background-color: rgba(229, 229, 229, 0.456);
+  }
+  &-containers{
+    margin-bottom: 40px;
+  }
+}

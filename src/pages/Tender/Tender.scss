@@ -1,0 +1,44 @@
+
+.video-container {
+    text-align: center;
+    padding: 100px;
+    margin-bottom: 50px;
+    box-shadow: 1px 1px 8px rgba(70, 160, 202, 0.551);
+    padding-top: 80px;
+  }
+  
+  .video-container {
+    width: 100%;
+    height: 500px;
+  }
+  
+  
+  .video-behind {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  
+  .video-behind iframe {
+    width: 400px;
+    height: 300px;
+    transition: opacity 0.3s;
+    border-radius: 40px;
+    box-shadow: 30px 30px 60px  rgba(70, 160, 202, 0.551);
+    transition: all 0.3s; /* Добавляем плавный переход при hover */
+  }
+  
+  .video-behind iframe:hover {
+    transform:scale(1.02);
+        background-color: aliceblue;
+        box-shadow: 1px 1px 8px rgb(0, 149, 255);
+  }
+  
+
+
+  

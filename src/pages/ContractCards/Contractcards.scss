@@ -142,26 +142,6 @@ h3 {
 }
 
 
-.accordion {
-  background-color: #0074d9;
-  color: #fff;
-  border-radius: 15px 15px 0 0;
-  cursor: pointer;
-  padding: 25px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-
- 
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: #00529a;
-}
-
 /* Style the accordion panel. Note: hidden by default */
 .panel {
   
@@ -170,10 +150,8 @@ h3 {
   overflow: hidden;
 }
 .panel {
-  
   background-color: white;
   max-height: 0;
-  overflow: hidden;
   transition: max-height 0.2s ease-out;
 
   .bottom {
@@ -196,17 +174,7 @@ h3 {
   }
 }
 
-.accordion:after {
-  content: '\02795';
-  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
-}
 
-.active:after {
-  content: "\2796"; 
-}
 
 .submit-button {
   margin-top: 20px;

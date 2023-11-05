@@ -7,7 +7,7 @@ const Header = () => {
             <div className="container">
 
                 <div className={s.logo}>
-                    <div className={s['logo-telegram']}>
+                <div className={s['logo-telegram']}>
                         <img src="bg.jpg" alt="Логотип" />
                     </div>
                     <div className={s.search}>
@@ -31,7 +31,7 @@ const Header = () => {
 
                 <nav>
                     <ul className={s['navbar']}>
-                        <li><a href="#">Тендер</a></li>
+                        <li><a href="/Tender">Тендер</a></li>
                         <li><a href="/Contracts">Закупки</a></li>
                         <li><a href="/Catalog">Каталог</a></li>
                         <li><a href="/Plans">Планы</a></li>

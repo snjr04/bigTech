@@ -14,7 +14,7 @@ import DetailedPlan from './pages/DetailedPlan/DetailedPlan';
 import Questions from './pages/Questions/Questions.jsx'
 import Documents from './pages/Documents/documents.jsx'
 import Messenger from "./pages/Messenger/Messenger";
-import Map1 from "./Companents/MapBanner/Map1";
+import Tender from "./pages/Tender/Tender.jsx"
 
 
 
@@ -35,7 +35,7 @@ function App() {
                     <Route element={<DetailedPlan/>} path="/DetailedPlan"/>
                     <Route element={<Questions/>} path="/Questions"/>
                     <Route element={<Documents/>} path="/Documents"/>
-                    <Route element={<Map1/>} path="/map"/>
+                    <Route element={<Tender/>} path="Tender/"/>
                 </Route>
                 <Route element={<NotFound/>} path="*"/>
                 <Route element={<Messenger/>} path="/message"/>
