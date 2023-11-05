@@ -7,6 +7,7 @@ import 'swiper/css/navigation';
 import {Pagination, Navigation} from 'swiper/modules';
 import {AiOutlineClose} from 'react-icons/ai'
 import {BiMessageRoundedDetail} from 'react-icons/bi'
+import Map1 from "./Map1";
 
 const MapBanner = () => {
 
@@ -317,6 +318,7 @@ l31 -17 19 31 c17 28 18 34 5 48 -8 9 -15 23 -15 31 0 22 104 63 138 54 22 -5
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="container">
+                                <Map1/>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>Slide 3</SwiperSlide>
