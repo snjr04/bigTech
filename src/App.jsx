@@ -13,7 +13,6 @@ import Plans from "./pages/Plans/Plans"
 import DetailedPlan from './pages/DetailedPlan/DetailedPlan';
 import Questions from './pages/Questions/Questions.jsx'
 import Documents from './pages/Documents/documents.jsx'
-import Messenger from "./pages/Messenger/Messenger";
 import Tender from "./pages/Tender/Tender.jsx"
 
 
@@ -38,7 +37,6 @@ function App() {
                     <Route element={<Tender/>} path="Tender/"/>
                 </Route>
                 <Route element={<NotFound/>} path="*"/>
-                <Route element={<Messenger/>} path="/message"/>
             </Routes>
         </BrowserRouter>
     )
